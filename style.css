@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&display=swap');
+
+
+
+:root {
+    --bgColor: #121013;
+    --fgColor: white;
+    --purple: #9334ea;
+    --btnColor: #ff9900;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    transition: .1s ease-in-out;
+}
+
+span {
+    color: var(--btnColor);
+}
+
+
+body {
+    background-color: var(--bgColor);
+    color: var(--fgColor);
+    background: url("img/b2.png");
+    /* animation-timing-function: linear; */
+    /* background-attachment: fixed; */
+    background-color: black;
+}
+
+
+nav {
+    position: fixed;
+    width: 100vw;
+    background-color: var(--bgColor);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+
+.navRight button {
+    background-color: var(--btnColor);
+    border: none;
+    border-radius: 10px;
+    padding: 8px 20px;
+    color: var(--bgColor);
+    font-size: 1.5rem;
+    font-weight: bold;
+    border: var(--btnColor) dashed;
+}
+
+.navRight button:hover {
+    cursor: pointer;
+    background-color: var(--bgColor);
+    color: var(--btnColor);
+}
+
+
+.titleSec {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--fgColor);
+    background-color: rgba(0, 0, 0, 0.788);
+
+}
+
+.titleSecCont {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+
+.titleSecCont h1 {
+    font-size: 6rem;
+    font-weight: bold;
+}
+
+.signUpSec {
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+}
+
+.signUpSec p {
+    font-style: italic;
+    margin-top: 10px;
+    font-size: 1.5rem;
+    /* align-self: start; */
+}
+
+.signUpBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.signUpBar input {
+    font-size: 1.5rem;
+    padding: 12px 25px;
+    border-right: none;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-left: solid var(--bgColor);
+    border-top: solid var(--bgColor);
+    border-bottom: solid var(--bgColor);
+}
+
+.signUpBar input:focus {
+    outline: none;
+}
+
+.signUpBar button {
+    font-size: 1.5rem;
+    background-color: var(--btnColor);
+    color: var(--bgColor);
+    border-left: none;
+    border-top: solid var(--bgColor);
+    border-bottom: solid var(--bgColor);
+    border-right: solid var(--bgColor);
+    /* border: var(--btnColor) dashed; */
+    font-weight: bold;
+    padding: 12px 30px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.signUpBar button:hover {
+    cursor: pointer;
+    background-color: var(--bgColor);
+    color: white;
+}
+
+.signedUpBar {
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    border: var(--bgColor) solid;
+    border-radius: 10px;
+    background-color: var(--btnColor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 30px;
+    font-size: 1.5rem;
+}
+
+.signedUpBar:hover {
+    cursor: pointer;
+    border: dashed;
+}
+
+
+.signUpError {
+    margin-top: 3px !important;
+    margin-left: 10px;
+    font-size: 1rem !important;
+    color: red;
+}
+
+.signUpError2 {
+    align-items: start !important;
+    text-align: left !important;
+}
+
+@media only screen and (max-width: 1100px) {
+    .titleSecCont h1 {
+        display: flex;
+        flex-direction: column;
+        font-size: 4rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .titleSecCont h1 {
+        display: flex;
+        flex-direction: column;
+        font-size: 4rem;
+    }
+
+    .signUpBar input {
+        padding-inline: 10px;
+        font-size: 1rem;
+    }
+
+    .signUpBar button {
+        padding-inline: 10px;
+        font-size: 1rem;
+    }
+}
+
+
+@media only screen and (max-width: 450px) {
+    nav {
+        font-size: 1.5rem;
+    }
+
+    .navRight button {
+        font-size: 1rem;
+    }
+
+    .titleSecCont h1 {
+        font-size: 3rem;
+    }
+
+    .titleSecCont h2 {
+        font-size: 1rem;
+    }
+
+    .signUpBar input {
+        padding-inline: 10px;
+        font-size: .7rem;
+    }
+
+    .signUpBar button {
+        padding-inline: 10px;
+        font-size: .7rem;
+    }
+}
